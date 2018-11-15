@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+  //MARK: Properties
+  @IBOutlet var taskNameLabel: UILabel!
+  @IBOutlet var taskTextField: UITextField!
+  
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
   }
@@ -18,13 +23,33 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     view.backgroundColor = UIColor.blue
+    
+    //  Handle the text field input provided by the user
+    taskTextField.delegate  = self
   
   }
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(true)
     
   }
-
-
+  
+  //MARK: UITextFieldDelegate
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    
+    //  Hide the keyboard
+    textField.resignFirstResponder()
+    return true
+  }
+  
+  func textFieldDidEndEditing(_ textField: UITextField) {
+    taskNameLabel.text = taskTextField.text
+    
+  }
+  
+  //MARK: Actions
+  @IBAction func setTaskAction(_ sender: UIButton) {
+    taskNameLabel.text  = "Default"
+  }
+  
 }
 

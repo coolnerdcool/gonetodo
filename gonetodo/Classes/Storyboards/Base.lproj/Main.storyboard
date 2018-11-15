@@ -26,15 +26,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Task" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0I-pW-Bpa">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Task" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0I-pW-Bpa">
                                         <rect key="frame" x="0.0" y="28.333333333333329" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffh-7O-rVH">
-                                        <rect key="frame" x="0.0" y="66.333333333333343" width="50" height="30"/>
-                                        <state key="normal" title="Create "/>
+                                        <rect key="frame" x="0.0" y="66.333333333333343" width="112" height="30"/>
+                                        <state key="normal" title="Set Default Task"/>
+                                        <connections>
+                                            <action selector="setTaskAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sSZ-NB-hZU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -50,6 +53,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="taskNameLabel" destination="hjK-ep-9eu" id="ZmR-Qt-jcQ"/>
+                        <outlet property="taskTextField" destination="h0I-pW-Bpa" id="fyK-z1-i0j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
