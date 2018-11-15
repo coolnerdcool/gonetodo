@@ -10,9 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    view.backgroundColor = UIColor.blue
+  
+  }
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(true)
+    
   }
 
 
