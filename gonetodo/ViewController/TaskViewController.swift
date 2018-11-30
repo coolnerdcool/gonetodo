@@ -21,7 +21,7 @@ class TaskViewController: UIViewController, UITextFieldDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
     view.backgroundColor = UIColor.blue
     
     //  Handle the text field input provided by the user
