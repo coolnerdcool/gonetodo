@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TaskViewController.swift
 //  gonetodo
 //
 //  Created by Michel Ortega on 10/29/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class TaskViewController: UIViewController, UITextFieldDelegate {
 
   //MARK: Properties
   @IBOutlet var taskNameLabel: UILabel!
