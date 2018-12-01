@@ -6,6 +6,7 @@
 //  Copyright © 2018 Michel Ortega. All rights reserved.
 //
 
+import CoreData
 import Foundation
 import os.log
 
@@ -21,4 +22,16 @@ class Task {
     
   }
     
+}
+
+/*  The class that checks each task 24 lifetime.  */
+class Time {
+  
+  var day: Double = 0
+  
+  init(day: Double) {
+    
+    self.day = day
+  }
+  
 }
