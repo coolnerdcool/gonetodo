@@ -18,28 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GONE TODO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="bTL-my-KXg">
-                                <rect key="frame" x="60" y="724.66666666666663" width="255" height="20.333333333333371"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="oUh-9L-vx9">
+                                <rect key="frame" x="27" y="242" width="321" height="326"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20.5" id="wcu-0n-Sbo"/>
+                                    <constraint firstAttribute="width" secondItem="oUh-9L-vx9" secondAttribute="height" multiplier="318:323" id="Pf4-Me-Rh8"/>
+                                    <constraint firstAttribute="width" constant="321" id="wR4-62-R4o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="bTL-my-KXg" secondAttribute="trailing" constant="44" id="C4C-Bp-zxQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bTL-my-KXg" secondAttribute="bottom" constant="33" id="YbM-jT-VfF"/>
-                            <constraint firstItem="bTL-my-KXg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="44" id="t8A-3I-Nl9"/>
+                            <constraint firstItem="oUh-9L-vx9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="baq-2f-Kj1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oUh-9L-vx9" secondAttribute="bottom" constant="210" id="rIX-rN-e9i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Launchscreen" width="321" height="314"/>
+    </resources>
 </document>
