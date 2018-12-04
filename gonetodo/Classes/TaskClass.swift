@@ -25,13 +25,17 @@ class Task {
 }
 
 /*  The class that checks each task 24 lifetime.  */
-class Time {
+class Time: TaskTime {
   
   var day: Double = 0
   
   init(day: Double) {
     
     self.day = day
+  }
+  
+  func getTime() {
+  
   }
   
 }

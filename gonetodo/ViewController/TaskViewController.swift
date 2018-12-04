@@ -40,7 +40,7 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITextFieldDelega
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 3
   }
-  
+  /*  Usually this is the heaviest method from the class  */
 //  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //
 //  }
