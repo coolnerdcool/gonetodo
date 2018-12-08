@@ -43,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				D0198698218786FB006CBB1F /* gonetodo */,
+				D02E31C621B5C4F7007C0869 /* Protocols */,
 				D0198697218786FB006CBB1F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,39 +59,36 @@
 		D0198698218786FB006CBB1F /* gonetodo */ = {
 			isa = PBXGroup;
 			children = (
-				D024D75F218A26D7006F9E24 /* Classes */,
-				D037F5C921B0A1BB000F37AE /* Launch */,
-				D037F5CA21B0A1DB000F37AE /* Media */,
-				D02E31C621B5C4F7007C0869 /* Protocols */,
-				D024D761218A26F5006F9E24 /* Storyboards */,
-				D024D760218A26E4006F9E24 /* ViewController */,
+				D024D75F218A26D7006F9E24 /* Model */,
+				D024D760218A26E4006F9E24 /* View */,
+				D024D761218A26F5006F9E24 /* Presenter */,
+				D037F5CA21B0A1DB000F37AE /* Networking */,
+				D037F5C921B0A1BB000F37AE /* Support */,
 			);
 			path = gonetodo;
 			sourceTree = "<group>";
 		};
-		D024D75F218A26D7006F9E24 /* Classes */ = {
+		D024D75F218A26D7006F9E24 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				D0FE67E721A7AB8A0013D094 /* TaskClass.swift */,
 			);
-			path = Classes;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		D024D760218A26E4006F9E24 /* ViewController */ = {
+		D024D760218A26E4006F9E24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D024D761218A26F5006F9E24 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				D019869B218786FB006CBB1F /* TaskViewController.swift */,
 			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		D024D761218A26F5006F9E24 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				D01986A2218786FD006CBB1F /* LaunchScreen.storyboard */,
-				D019869D218786FB006CBB1F /* Main.storyboard */,
-			);
-			path = Storyboards;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		D02E31C621B5C4F7007C0869 /* Protocols */ = {
@@ -101,21 +99,23 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		D037F5C921B0A1BB000F37AE /* Launch */ = {
-			isa = PBXGroup;
-			children = (
-				D0198699218786FB006CBB1F /* AppDelegate.swift */,
-				D01986A5218786FD006CBB1F /* Info.plist */,
-			);
-			path = Launch;
-			sourceTree = "<group>";
-		};
-		D037F5CA21B0A1DB000F37AE /* Media */ = {
+		D037F5C921B0A1BB000F37AE /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				D01986A0218786FD006CBB1F /* Assets.xcassets */,
+				D0198699218786FB006CBB1F /* AppDelegate.swift */,
+				D01986A2218786FD006CBB1F /* LaunchScreen.storyboard */,
+				D019869D218786FB006CBB1F /* Main.storyboard */,
+				D01986A5218786FD006CBB1F /* Info.plist */,
 			);
-			path = Media;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D037F5CA21B0A1DB000F37AE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WU95R9B238;
-				INFOPLIST_FILE = "$(SRCROOT)/gonetodo/Launch/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/gonetodo/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WU95R9B238;
-				INFOPLIST_FILE = "$(SRCROOT)/gonetodo/Launch/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/gonetodo/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
