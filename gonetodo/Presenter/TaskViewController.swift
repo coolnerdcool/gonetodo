@@ -25,7 +25,7 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITextFieldDelega
   override func viewDidLoad() {
     super.viewDidLoad()
     print("viewDidLoad is Working")
-    view.backgroundColor = UIColor.blue
+    view.backgroundColor = UIColor.lightGray
     
     //  Handle the text field input provided by the user
     taskTextField.delegate  = self
