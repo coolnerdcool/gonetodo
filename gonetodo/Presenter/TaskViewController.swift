@@ -9,8 +9,8 @@
 import CoreData
 import UIKit
 
-class TaskViewController: UIViewController,UITableViewDelegate,UITextFieldDelegate {
-
+class TaskViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate {
+  
   //MARK: Properties
   @IBOutlet var taskNameLabel: UILabel!
   @IBOutlet var taskTextField: UITextField!
@@ -46,6 +46,11 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITextFieldDelega
 //  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //
 //  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = UITableViewCell(style: .default, reuseIdentifier: "Task")
+    return cell
+  }
   
   
   
