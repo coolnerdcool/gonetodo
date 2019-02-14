@@ -16,6 +16,8 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITextFieldDelega
   @IBOutlet var taskTextField: UITextField!
   
   
+  var listOfTask = ["Romance"]
+  
   override func viewWillAppear(_ animated: Bool) {
     print("Working")
     super.viewWillAppear(true)
@@ -38,7 +40,7 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITextFieldDelega
   
   //MARK: TableView
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 3
+    return listOfTask.count
   }
   /*  Usually this is the heaviest method from the class  */
 //  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
