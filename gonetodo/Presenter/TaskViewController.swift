@@ -43,9 +43,6 @@ class TaskViewController: UIViewController,UITableViewDataSource,UITableViewDele
     return listOfTask.count
   }
   /*  Usually this is the heaviest method from the class  */
-//  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//  }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = UITableViewCell(style: .default, reuseIdentifier: "Task")
