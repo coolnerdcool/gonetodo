@@ -16,7 +16,7 @@ class TaskViewController: UIViewController,UITableViewDataSource,UITableViewDele
   @IBOutlet var taskTextField: UITextField!
   
   
-  var listOfTask = ["Romance"]
+  var listOfTask = [String]()
   
   override func viewWillAppear(_ animated: Bool) {
     print("Working")
@@ -34,7 +34,7 @@ class TaskViewController: UIViewController,UITableViewDataSource,UITableViewDele
   
   }
   override func viewDidDisappear(_ animated: Bool) {
-    super.viewDidDisappear(true)
+    super.viewDidDisappear(animated)
     
   }
   
@@ -47,6 +47,7 @@ class TaskViewController: UIViewController,UITableViewDataSource,UITableViewDele
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = UITableViewCell(style: .default, reuseIdentifier: "Task")
     return cell
+        
   }
   
   
