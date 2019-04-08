@@ -26,12 +26,14 @@ class TaskViewController: UIViewController,UITableViewDataSource,UITableViewDele
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    print("viewDidLoad is Working")
+    print("viewDidLoad() is Working")
     view.backgroundColor = UIColor.lightGray
+    navigationController?.navigationBar.prefersLargeTitles = true
+    navigationItem.title = "GoneApp"
     
     //  Handle the text field input provided by the user
     taskTextField.delegate  = self
-  
+    
   }
   override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(animated)
@@ -47,16 +49,20 @@ class TaskViewController: UIViewController,UITableViewDataSource,UITableViewDele
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = UITableViewCell(style: .default, reuseIdentifier: "Task")
     return cell
-        
+    
   }
   
-  
-  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+      navigationController?.pushViewController(vc, animated: true)
+      
+    }
+  }
   
   //MARK: UITextFieldDelegate
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     
-    //  Hide the keyboard
+    //  This hides the keyboard.
     textField.resignFirstResponder()
     return true
   }
